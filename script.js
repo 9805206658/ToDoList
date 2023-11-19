@@ -32,7 +32,6 @@ function contentAdder()
    if(checker)
    {
       counter++;
-      window.alert("the value of the counter is "+counter);
     let list=document.createElement("li");
     let para=document.createElement("p");
     let btn=document.createElement("button");
