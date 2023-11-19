@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="5">
+  <title>To do list app</title>
+  <style>
+   #container
+   {
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+    height: 100vh;
+    background-color: rgb(88, 34, 43);
+    border:3px solid blue;
+   }
+ #row1
+   {
+    width:100vw;
+    height:5vh;
+    margin-top: 5px;
+    padding-bottom:15px;
+
+   }
+   #row1 h1
+   {
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 15px;
+  
+   }
+   /* here desinging the next heading */
+.rows
+{
+  width:100vw;
+    height:5vh;
+    margin-top: 5px;
+  padding-bottom:15px;
+}
+.rows h2
+{
+  color: yellow;
+  text-align: center;
+  opacity:1.4px;
+}
+/* here tagetting the heading of the row4 */
+#row4 h2
+{
+  color:black;
+}
+/* desinging of the input field */
+#input-container
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+/* desiging of the input field */
+#work
+{
+  width:50vw;
+  border-radius: 10px;
+ margin-right: 5px;
+ font-size: 20px;
+  border:1px solid black;
+}
+/* here editing the button */
+#save
+{
+  background-color: darkslategrey;
+  width:50px;
+  height: 38px;
+  padding:5px;
+  border-radius:10px;
+}
+#save img
+{
+  width:25px;
+  height: 25px;
+}
+#list
+{
+  list-style: none;
+  margin: auto;
+  margin-top:20px;
+}
+#list li
+{
+ width:50vw;
+ height: 7vh;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ border-radius: 15px;
+ background-color: cadetblue;
+ margin-top: 5px;
+
+}
+#list li p
+{
+  width:80vw;
+  text-align: center;
+  color: azure;
+
+}
+/* here desigining the id delete which delete the specfic item */
+.delete
+{
+color:darkgrey;
+height: 5vh;
+background-color: red;
+color: black;
+width:3vw;
+font-size: 20px;
+font-weight: bold;
+margin-left: 5px;
+border:none;
+}
+
+  </style>
+</head>
+<body>
+ <div id="container">
+  <div id="row1" >
+  <h1>work to-dos</h1>
+  </div>
+  <div id="row2" class="rows">
+ <h2>Enter the text into the input field to add item to your list.</h2>
+  </div>
+   <div id="row3" class="rows">
+   <h2>click the item to mark it as complete.</h2>
+   </div>
+   <div id="row4" class="rows">
+    <h2>Click the "x" to remove the item from your list.</h2>
+   </div>
+   <div id="input-container">
+<input type="text" name="text" placeholder="New item..." id="work">
+<button id="save" ><img src="pencil.png"></button>
+   </div>
+   <ul id="list">
+   </ul>
+ </div>
+ <section id="information">
+
+ </section>
+ <footer>
+
+ </footer>
+ <script src="day1.js"></script>
+</body>
+</html>
